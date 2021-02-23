@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paysafe</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="https://hosted.paysafe.com/checkout/v2/paysafe.checkout.min.js"></script>
+    <script type="text/javascript" src="../js/index.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+</head>
+
+<body>
+    <form class="container col-6">
+        <div class="form-group row">
+            <div class="col-6">
+                <label for="firstName">First Name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="Enter First Name" required>
+            </div>
+            <div class="col-6">
+                <label for="lastName">Last Name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="Enter Last Name" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="email">Email address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address</label>
+            <input class="form-control" type="text" placeholder="Address" id="address" required>
+        </div>
+        <div class="form-group">
+            <label for="phone">Phone</label>
+            <input class="form-control" type="text" placeholder="Enter phone number" id="phone" required>
+        </div>
+        <div class="form-group row">
+            <div class="col-6">
+                <label for="city">City</label>
+                <input class="form-control" type="text" placeholder="City" id="city" required>
+            </div>
+            <div class="col-6">
+                <label for="zip">Zip Code</label>
+                <input class="form-control" type="text" placeholder="Enter Zip" id="zip" required>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="amount">Amount</label>
+            <input class="form-control" type="text" placeholder="Enter amount" id="amount" required>
+        </div>
+        <button type="submit" class="btn btn-info" onclick="makePayment()">Pay</button>
+    </form>
+</body>
+
+</html>
